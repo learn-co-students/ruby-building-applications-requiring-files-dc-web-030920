@@ -1,9 +1,9 @@
 class Plant
-  attr_accessor :garden, :name
+   attr_accessor :garden, :name
 
   @@all = []
 
-  def initialize(name:)
+  def initialize(name)
     @name = name
     @@all << self
   end
@@ -11,4 +11,5 @@ class Plant
   def self.all
     @@all
   end
+
 end
